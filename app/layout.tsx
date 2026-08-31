@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 
 const siteUrl = "https://emiguru.vercel.app";
@@ -30,11 +29,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className="h-full">
       <head>
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9707175259009586"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </head>
       <body className="min-h-full flex flex-col">
