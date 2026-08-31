@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 const siteUrl = "https://emiguru.vercel.app";
@@ -45,7 +46,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {children}
         <footer className="site-footer">
           <div className="site-footer-inner">
-            EMI Guru — free loan calculators for Indian borrowers.
+            <span>EMI Guru — free loan calculators for Indian borrowers.</span>
+            <Link href="/privacy-policy" className="footer-link">
+              Privacy Policy
+            </Link>
           </div>
         </footer>
       </body>

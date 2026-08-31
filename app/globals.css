@@ -69,6 +69,20 @@ body {
   padding: 1.5rem;
   font-size: 0.82rem;
   color: var(--ink-soft);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.footer-link {
+  color: var(--ink-soft);
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: var(--accent);
 }
 
 .page-shell {
@@ -438,6 +452,15 @@ body {
   font-size: 0.86rem;
   line-height: 1.4;
   color: var(--ink);
+}
+
+.sidebar-title-link {
+  text-decoration: none;
+}
+
+.sidebar-title-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .sidebar-note {
